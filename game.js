@@ -1,7 +1,6 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// Initial game settings
 const TILE_SIZE = 40;
 const MAX_ROWS = 20;
 const MAX_COLS = 20;
@@ -20,7 +19,6 @@ let baseTimeLimit = 10;
 let timeLeft = baseTimeLimit;
 let inBreak = false;
 
-// Updated paths for audio files
 let goalSound = new Audio('goal-sound.mp3');
 goalSound.volume = 0.5;
 let roundCompleteSound = new Audio('round-complete.mp3');
